@@ -28,7 +28,7 @@
 ~~~
 **显示效果**
 
-![六角星](..\img\star-six.png)
+![六角星](https://github.com/CClannad/LearnCSS/blob/master/img/star-six.png)
 
 
 * 杂志
@@ -128,5 +128,5 @@ img {
 
 ~~~
 **效果显示**
-![杂志编辑](..\LearnCSS\img\cat.png)
+![杂志编辑](./img/cat.png)
 
