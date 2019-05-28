@@ -4,7 +4,8 @@
 
 * 六角星
 **css**
-~~~css
+~~~
+
 #start-six {
     width: 0;
     height: 0;
@@ -78,7 +79,8 @@ img {
 
 ~~~
 
-**html**
+/**html**
+
 ~~~
 <div class="row">
     <div class="l col-md-3"></div>
@@ -127,6 +129,8 @@ img {
 </div>
 
 ~~~
+
 **效果显示**
+
 ![杂志编辑](./img/cat.png)
 
