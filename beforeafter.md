@@ -28,7 +28,7 @@
 ~~~
 **显示效果**
 
-![六角星](..\LearnCSS\img\star-six.png)
+![六角星](..\img\star-six.png)
 
 
 * 杂志
