@@ -1,5 +1,5 @@
 # CSS
 
 * [Initial page](README.md)
-* [before/after](beforeafter)
+* [before/after](beforeafter.md)
 
