@@ -29,7 +29,7 @@
 ~~~
 **显示效果**
 
-![六角星](https://github.com/CClannad/LearnCSS/blob/master/img/star-six.png)
+![六角星](./img/star-six.png)
 
 
 * 杂志
@@ -134,3 +134,108 @@ img {
 
 ![杂志编辑](./img/cat.png)
 
+
+* @media
+
+**css**
+~~~css
+body {
+    background: #fbfff0;
+    font-size: 14px;
+}
+
+#fluid-warp {
+    width: 70%;
+    margin: 60px auto;
+    padding: 20px;
+    background: white;
+    overflow: hidden;
+}
+
+#sidebar ul li a {
+    color: #900;
+    text-decoration: none;
+    padding: 3px 0;
+    display: block;
+}
+
+#sidebar {
+    width: 35%;
+    float: left;
+}
+
+
+#sidebar ul li {
+    list-style: none;
+}
+
+@media all and (min-width: 1001px) {
+    #sidebar ul li a:after {
+        content: "(" attr(data-email) ")";
+        font-size: 11px;
+        font-style: italic;
+        color: #666;
+    }
+}
+
+@media all and (max-width: 1000px) and (min-width: 700px) {
+    #sidebar ul li a:before {
+        content: "Link :";
+        font-style: italic;
+        color: #666;
+    }
+}
+
+@media all and  (max-width: 699px) and (min-width: 520px), (min-width: 1151px) {
+    #sidebar ul li a {
+        padding-left: 21px;
+        background: url("../img/email.png") left center no-repeat;
+    }
+}
+
+#main-content {
+    width: 65%;
+    float: right;
+}
+
+~~~
+
+**html**
+~~~html
+<div id="fluid-warp">
+    <div id="sidebar">
+        <h3>Super team:</h3>
+        <ul id="nav">
+            <li><a data-email="baidu.com" href="https://www.baidu.com">baidu</a></li>
+            <li><a data-email="qq.com" href="https://www.qq.com">tencent</a></li>
+        </ul>
+    </div>
+    <div id="main-content">
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum
+            tortor
+            quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
+            Aenean
+            ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.
+            Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget
+            tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis
+            pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu
+            vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+            facilisis
+            luctus, metus</p>
+    </div>
+</div>
+~~~
+**结果显示**
+![smallest screen-width](./img/stretch.png)
+![medium screen-width](./img/stretch-1.png)
+![large screen-width](./img/stretch-2.png)
+![largest screen-width](./img/stretch-3.png)
+
+**说明**
+
+根据屏幕宽度变化，显示相应的附加信息
+
+
+### 参考
+1.	A Whole Bunch of Amazing Stuff Pseudo Elements Can Do https://css-tricks.com/pseudo-element-roundup/
+2.	CSS Media Queries & Using Available Space <https://css-tricks.com/css-media-queries/>
