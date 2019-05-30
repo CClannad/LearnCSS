@@ -2,4 +2,5 @@
 
 每天希望能写一点点代码，实现一些关于css的小东西，熟悉css和它所能完成的一系列小组件
 
-学习网站  https://css-tricks.com
+本仓库所有学习内容均来自  https://css-tricks.com
+
