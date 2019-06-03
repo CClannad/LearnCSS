@@ -7,4 +7,7 @@
 * [Adjacent sibling](Adjacent-sibling)
 * [attribute]([attribute])
 * [align-content](align-content.md)
-
+* [align-items](align-items.md)
+* [align-self](align-self.md)
+* [all](all.md)
+* [animation](animation.md)
